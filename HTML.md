@@ -47,7 +47,8 @@
 
 ## 8.cookies,sessionStorage,localStorage的区别？
 
-​	共同点：都是保存在浏览器端，且是同源的。
+​	共同点：
+​	都是保存在浏览器端，且是同源的。
 ​	区别：
 ​	1.cookies是为了标识身份而存储在用户本地终端上的数据，始终在同源http请求中携带，即cookies在浏览器和服务端间来回传递，而sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。
 ​	2.存储大小的不同。cookies保存的数据很小，不能超过4k，而localStorage和sessionStorage保存的数据大，可达到5M。
