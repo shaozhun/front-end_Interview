@@ -1,4 +1,11 @@
 # HTML
+
+```
+“你三四月做的事,七八月自有答案”
+```
+
+
+
 ## 1.什么是HTML语义化，有什么好处？
 
 ​	web语义化是指HTML标记表示页面包含的信息，包含了HTML标签的语义化和CSS命名的语义化。HTML标签的语义化是指：通过使用包含语义的标签恰当的表示文档结构。CSS命名的语义化是指：为HTML标签添加有意义的class和id补充未表达的语义。
@@ -38,5 +45,12 @@
 
 ​	title是鼠标滑动到图片元素上面显示，alt是图片内容的等价描述，当图片无法加载时显示，可提高图片高可访问性。
 
+## 8.cookies,sessionStorage,localStorage的区别？
 
+​	共同点：都是保存在浏览器端，且是同源的。
+​	区别：
+​	1.cookies是为了标识身份而存储在用户本地终端上的数据，始终在同源http请求中携带，即cookies在浏览器和服务端间来回传递，而sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。
+​	2.存储大小的不同。cookies保存的数据很小，不能超过4k，而localStorage和sessionStorage保存的数据大，可达到5M。
+​	3.数据的有效期不同。cookies在设置的cookies过期时间之前一直有效，即使窗口或者浏览器关闭。sessionStorage仅在浏览器窗口关闭之前有效。localStorage始终有效，可用作长久数据保存。
+​	4.作用域不同。cookies在所有的同源窗口都是共享，localStorage在所有的同源窗口都是共享。sessionStorage不在不同的浏览器共享，即使统一页面。
 
