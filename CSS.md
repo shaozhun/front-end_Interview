@@ -13,7 +13,7 @@
 ## 2.CSS盒模型，标准盒模型和IE盒模型
 
 ​	1.标准盒模型，margin,padding,border,content,width=content.
-​	2.IE盒模型,margin,padding,border,content.width=content+padding+content.
+​	2.IE盒模型,margin,padding,border,content.width=content+padding+border.
 
 ## 3.css选择符，哪些属性可以继承
 
@@ -53,6 +53,10 @@
 
 ​	尽量将样式写在单独的css文件里面，内容和样式分离，易于管理和维护。减少页面体积。css文件可以被缓存，重用。
 ​	不使用@import。
-​	避免使用复杂的选择器，精简样式文件，利用css继承减少代码量。避免!important
+​	避免使用复杂的选择器，精简样式文件，利用css继承减少代码量。避免!important。
 
-。
+## 10.隐藏元素的方法和区别？
+
+## 11.什么是BFC？
+
+## 
