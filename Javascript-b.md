@@ -21,11 +21,12 @@
 ## 3.DNS预解析
 
 ​	`dns-prefetch` 链接关系类型用于指示将用于获取所需的源，并且用户代理应该尽可能早地解析，可以提高网页的载入速度。DNS预解析是浏览器试图在用户访问链接之前解析域名，这是计算机的正常DNS解析机制。域名解析后，如果用户确实访问该域名，那么DNS解析时间将不会有延迟。
-
-<meta http-equiv="x-dns-prefetch-control" content="off">
+···
 // 打开和关闭DNS预读取
+<meta http-equiv="x-dns-prefetch-control" content="off">
 // 强制查询特定主机名
 <link rel="dns-prefetch" href="//hm.baidu.com">
+···
 
 
 
