@@ -61,13 +61,87 @@
 
 ```opacity:0;``` 元素隐藏依然占据空间，绑定的事件依然能触发。
 
-visibility:hidden;
+visibility:hidden; 元素隐藏依然占据控件，绑定事件不会触发。
 
 ## 11.什么是BFC？
 
+BFC全称为块格式化上下文。
+
 ## 12.如何垂直居中？
 
+方法1：先设置水平居中，再在Y轴上偏移。
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            width: 300px;
+            height: 300px;
+            background: orange;
+            margin: 0 auto; /*水平居中*/
+            position: relative;
+            top: 50%; /*偏移*/
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="content"></div>
+</body>
+</html>
+```
+
+方法2：flex布局，```display:flex;justify-content:center;align-items:center;```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    
+        body {
+            display: flex;
+            align-items: center; /*定义body的元素垂直居中*/
+            justify-content: center; /*定义body的里的元素水平居中*/
+        }
+        .content {
+            width: 300px;
+            height: 300px;
+            background: orange;        
+        }
+    </style>
+</head>
+<body>
+    <div class="content"></div>
+</body>
+</html>
+```
+
+
+
 ## 13.如何水平居中？
+
+行内元素```text-align:cente;```  块级元素：```margin: 0 auto;``` 
+
+flex布局中：```display:flex;justify-content:center;``` 
 
 ## 14.flex怎么用?常用属性有哪些？
 
