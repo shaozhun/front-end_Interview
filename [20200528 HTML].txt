@@ -1,0 +1,60 @@
+[20200528 HTML]
+--说说viewport
+	我一般做手机端移动端
+	<meta name='viewport' content='width=device-width;user-scaleable=no,maximum-scale=1.0,minimum-scale=1.0;initial-scale=1.0'>
+
+--说说语义化
+	语义化是指用具有语义化的标签来编写html代码
+	优点有 便于团队协作开发  便于盲人阅读器更好的解析 有利于seo 去掉样式后 代码结构更加清晰
+
+--DOCTYPE的作用?
+	在<!DOCTYPE>放在<head>的前面,告诉浏览器解析器以什么文档标准解析这个文档。
+	不存在或者格式错误会导致文档以兼容模式呈现。
+
+--行内元素和块级元素?
+	行内元素从左到右,块级元素从上到下,独占一行。
+	常见行内元素: span a br img
+	常见块级元素: div h1 section header 
+
+--盒模型?
+	一般分为两种盒模型,标准盒模型和IE盒模型
+	content-box: width=content
+	border-box: width=padding+content+border
+
+--Flex布局?
+	css3新增 一般比较常见的是用到居中:display:flex;justify-content:center;align-items:center;
+
+--浏览器的渲染原理?
+	首先解析收到的文档,根据文档构建一棵DOM树,然后对CSS进行解析,生成CSSOM规则树, 根据DOM树和CSSOM规则树生成渲染树,根据渲染树来进行布局,然后绘制。
+
+--什么是重绘和回流?
+	重绘:当渲染树的一些元素需要更新属性,而这些属性只是影响元素的外观和风格而不影响布局。比如background-color
+	回流:当渲染树的一些元素更新属性改变元素的规模尺寸布局,会影响到布局的操作。
+
+--常见的浏览器端的存储技术?
+	cookie localStorage sessionStorage
+
+--说说cookies和localStorage sessionStorge的区别?
+	存储大小 cookies不能超过4k 其他两个可以达到5M
+	有效时间 localstoage不丢失 sessionStorage 页面会话结束时会被清除  cookies在设置的过期时间之前一直有效 即使窗口或者浏览器关闭
+	作用域 sessionStorage 只有当前会话中共享 其他两个在所有的同源窗口都是共享的
+
+--img的title和alt有啥区别?
+	title是鼠标hover到图片中显示的文字标题 alt是当图片无法正常显示时的等价描述标题
+
+--css reset.css和normalize.css的区别?
+	reset.css是重置 去除掉所有默认样式
+	normalize.css是默认 将所有默认样式统一 
+
+--常见的浏览器内核css前缀?
+	mozilla内核 -moz
+	webkit内核  -webkit
+	opera内核 -o
+	trident内核 -ms
+
+--讲讲前端性能优化?
+	我认为可以从三个方面优化:
+	第一个方面是内容方面 通过base64 css雪碧图开减少HTTP请求数,使用延迟加载来减少请求次数 当用户需要访问时 再去请求加载
+	第二个方面是服务器方面  可使用cdn服务 来提高用户对于资源请求时的响应速度
+	第三个方面是css和js方面 把样式表放在head标签中 减少首次渲染的时间 通过对css和js的压缩 来减少文件的体积
+
