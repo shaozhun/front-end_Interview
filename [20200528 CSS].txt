@@ -1,0 +1,41 @@
+[20200528 CSS]
+--CSS选择符有哪些?
+	ID选择器 类选择器 标签选择器 后代选择器 属性选择器 通配符选择器 伪类选择器
+
+
+--CSS那些属性可以继承?
+	font-size color font-color 
+
+--如何居中div?
+	margin: 0 auto;
+	display:flex;justify-content: center;
+
+--position的值?基于什么定位?
+	position的值有relative;absolute;fixed;
+	relative相对于原文档流位置定位 absolute相对于最近的非relative的父级定位 fixed相对于视口定位
+
+
+--CSS3有哪些新特性?
+	transition过渡 transform转换  animation动画
+
+--常见浏览器兼容性有哪些?
+	图片格式8位 谷歌浏览器会将小于12px的强制转换为12px的 添加一个属性-webkit-text-size-adjust:none;
+
+--为什么要初始化css?
+	使用reset.css 在各大浏览器的默认样式一样 
+	更好的编写css样式代码
+
+--简单介绍下base64图片的优点和缺点?
+	base64位能减少http请求 但是会使得图片的大小大1/3 一般在小图 icon logo时使用
+
+--对BFC的理解?和IFC的理解?
+	块级格式化上下文 行级格式化上下文
+
+--对文档流的理解?
+	元素从左至右 占满一行后从上至下
+
+--什么是CSS预处理器?一般用到哪些?
+	CSS 预处理器是指一种专门的编程语言来编写css代码 一般用到stylus sass less 没有本质的区别 一般用到变量 mixin 嵌套
+
+--阐述一下CSS Sprites
+	CSS 雪碧图是指将一些矢量图放在一张图片上 然后用到css定位的属性去选择对应的图片 这样能减少http请求 优化网站性能
