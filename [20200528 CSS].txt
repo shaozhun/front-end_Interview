@@ -6,6 +6,14 @@
 --CSS那些属性可以继承?
 	font-size color font-color 
 
+--CSS权重?
+	!important 无穷大
+	行内样式 1000
+	id选择器 100
+	class选择器 10
+	标签选择器 1
+	通配符 0
+
 --如何居中div?
 	margin: 0 auto;
 	display:flex;justify-content: center;
@@ -39,3 +47,6 @@
 
 --阐述一下CSS Sprites
 	CSS 雪碧图是指将一些矢量图放在一张图片上 然后用到css定位的属性去选择对应的图片 这样能减少http请求 优化网站性能
+
+--溢出文本省略号
+	overflow:hidden;white-space:nowrap;text-overflow:elipsis;
