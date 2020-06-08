@@ -22,7 +22,7 @@
 	position的值有relative;absolute;fixed;
 	relative相对于原文档流位置定位 absolute相对于最近的非relative的父级定位 fixed相对于视口定位
 
-
+ 
 --CSS3有哪些新特性?
 	transition过渡 transform转换  animation动画
 
@@ -37,7 +37,8 @@
 	base64位能减少http请求 但是会使得图片的大小大1/3 一般在小图 icon logo时使用
 
 --对BFC的理解?和IFC的理解?
-	块级格式化上下文 行级格式化上下文
+	块级格式化上下文 
+	行级格式化上下文
 
 --对文档流的理解?
 	元素从左至右 占满一行后从上至下

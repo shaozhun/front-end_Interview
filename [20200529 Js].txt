@@ -22,4 +22,15 @@
 
 --如何实现数组的随机排序?
 
---
+--手写节流
+function throttle(fn,gaptime){
+  let lastTime = null
+  let nowTime = null
+  return function() {
+    nowTime = Date.now()
+    if(!lastTime || nowTime - lastTime > gapTime) {
+      fn()
+      lastTime = nowTime
+    }
+  }
+}
