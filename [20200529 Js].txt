@@ -34,3 +34,14 @@ function throttle(fn,gaptime){
     }
   }
 }
+
+--手写防抖
+function debounce(fn,wait){
+	let timer = null
+	return function(){
+		if(timer){
+			clearTimeOut(timer)
+			timer = setTimeout(()=>fn.apply(this,arguements),wait)
+		}
+	}
+}
